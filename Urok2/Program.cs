@@ -122,13 +122,13 @@
 
             // 5. а)
 
-            Console.WriteLine("Для подсчета Индекса массы тела (ИМТ) необходимо указать ваш вес в кг, например 54.3 : ");
+            Console.WriteLine("Для подсчета Индекса массы тела (ИМТ) необходимо указать ваш вес в кг, например 54,3 : ");
 
             string weightman = Console.ReadLine();
 
             double weight = Convert.ToDouble(weightman);
 
-            Console.WriteLine("Так же необходимо указать ваш рост в метрах, например 1.72 :");
+            Console.WriteLine("Так же необходимо указать ваш рост в метрах, например 1,72 :");
 
             string heightman = Console.ReadLine();
 
@@ -171,11 +171,11 @@
             {
 
                 double advnormweight = weight - normweight;
-                Console.WriteLine($"Вам необходимо похудеть на {advnormweight} кг");
+                Console.WriteLine($"Вам необходимо похудеть на {advnormweight:F2} кг");
 
             }
             else
             {
                 double advnormweight = normweight - weight;
-                Console.WriteLine($"Вам необходимо набрать {advnormweight} кг");
+                Console.WriteLine($"Вам необходимо набрать {advnormweight:F2} кг");
             }
