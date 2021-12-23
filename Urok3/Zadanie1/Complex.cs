@@ -15,16 +15,6 @@ result = new(this.numA+z.numA, this.numB+z.numB);
 
 return result;
 }
-
-public override string ToString() // Переопределяем метод ToString
-    {
-        string s;
-        if (numB<0) s = $"{numA} - {-numB}i";
-        else s = $"{numA} + {numB}i";
-        
-        return s;
-    }
-
 public void ShowSum()
 {
     System.Console.WriteLine($"Сумма двух комплексных чисел: "+ToString());
@@ -60,5 +50,12 @@ public void ShowMult()
     System.Console.WriteLine($"Произведение двух комплексных чисел: "+ToString());
     
 }
-
+public override string ToString() // Переопределяем метод ToString
+    {
+        string s;
+        if (numB<0) s = $"{numA} - {-numB}i";
+        else s = $"{numA} + {numB}i";
+        
+        return s;
+    }
 }

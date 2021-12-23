@@ -12,7 +12,7 @@
 *** Добавить упрощение дробей.
 */
 
- int GetNum(string txt)
+ int GetNum(string txt)  // защита ввода
             {
                 int result;
                 bool flag = false;
@@ -24,13 +24,15 @@
 
                 return result;
             }
-
+        // запрашиваем значения первой дроби
         int a = GetNum("Введите числитель первой дроби: ");
         int b = GetNum("Введите знаменатель первой дроби: ");
 
         Drobi a1 = new Drobi(a, b);
 
         Console.WriteLine($"Первая дробь: {a1}");
+
+        // запрашиваем значения второй дроби
 
         int c = GetNum("Введите числитель второй дроби: ");
         int d = GetNum("Введите знаменатель второй дроби: ");
@@ -39,14 +41,16 @@
 
         Console.WriteLine($"Вторая дробь: {a2}");
 
-        Drobi a3 = a1.Sum(a2);
+        // действия с дробями
+
+        Drobi a3 = a1.Sum(a2); // складываем
         Console.WriteLine($"Результат действия: {a1} + {a2} = {a3}");
 
-        Drobi a4 = a1.Diff(a2);
+        Drobi a4 = a1.Diff(a2); // вычитаем
         Console.WriteLine($"Результат действия: {a1} - {a2} = {a4}");
 
-        Drobi a5 = a1.Mult(a2);
+        Drobi a5 = a1.Mult(a2); // умножаем
         Console.WriteLine($"Результат действия: {a1} * {a2} = {a5}");
 
-        Drobi a6 = a1.Del(a2);
+        Drobi a6 = a1.Del(a2); // делим
         Console.WriteLine($"Результат действия: {a1} : {a2} = {a6}");

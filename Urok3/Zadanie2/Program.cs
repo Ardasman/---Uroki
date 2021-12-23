@@ -5,7 +5,7 @@
 Требуется подсчитать сумму всех нечётных положительных чисел. Сами числа и сумму вывести на экран, используя tryParse.
 */
 
-int GetNum(string txt)
+int GetNum(string txt)  // защита ввода
 {
     int result;
     bool flag = false;
@@ -18,13 +18,14 @@ int GetNum(string txt)
     return result;
 }
 
+// запрашиваем числа
 int numbers = GetNum("Введите число: ");
-int nechet = 0;                                        
+int nechet = 0;     
 
-while (numbers != 0)
+while (numbers != 0) // проверка введён ли 0 
 {
 
-    if (numbers % 2 > 0)                                 
+    if (numbers % 2 > 0)       // проверка на нечет                          
     {
         nechet += numbers;
     }
