@@ -3,7 +3,6 @@ static class StaticClass
     public static int[] Massive(int n) // конструктор массива
     {
         int[] nums = new int[n];
-
         return nums;
     }
     public static string Show(int[] num) // метод вывода в консоль
@@ -15,7 +14,6 @@ static class StaticClass
         }
         return outnums;
     }
-
     public static void FillMass(int[] num, int min, int max) // метод заполнения массива случайными цифрами в заданом диапазоне
     {
         Random rnd = new Random();
@@ -24,7 +22,6 @@ static class StaticClass
             num[i] = rnd.Next(min, max);
         }
     }
-
     public static int ParaThree(int[] num) // считаем пары чисел, в которых только одно число делится на 3
     {
         int count = 0; // счёчик пар
@@ -36,6 +33,4 @@ static class StaticClass
         }
         return count;
     }
-
-
 }
