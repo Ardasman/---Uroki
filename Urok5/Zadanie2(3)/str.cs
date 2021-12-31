@@ -10,7 +10,7 @@ class Str
         if (str1.Length != str2.Length) return false;   // Сравниваем длины строк, если разные дальше сравнивать нет смысла
 
         Array.Sort(x); // Сортируем массивы
-        Array.Sort(y);
+        Array.Sort(y); // Сортируем массивы
 
         bool isEqual = Enumerable.SequenceEqual(x, y); // Сравниваем массивы между собой
 
