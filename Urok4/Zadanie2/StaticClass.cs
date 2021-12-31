@@ -6,7 +6,6 @@ static class StaticClass
 
                 return nums;
             }
-
             public static string Show(int[] num) // метод вывода в консоль
             {
                 string outnums = String.Empty;
@@ -37,4 +36,6 @@ static class StaticClass
                }
                return count;
             }
-            }
+            
+        
+        }
