@@ -17,11 +17,9 @@ class Str
         if (isEqual) return true;
         return false;
     }
-
     public void Print(bool str)
     {
         if (str) Console.WriteLine("Выражение 1 является перестановкой Выражения 2");
         else Console.WriteLine("Выражение 1 и Выражения 2 разные");
     }
-
 }

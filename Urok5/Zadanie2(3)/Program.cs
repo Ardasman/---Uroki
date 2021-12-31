@@ -5,7 +5,6 @@
 Например: badc являются перестановкой abcd.
 */
 
-
 Str ab = new Str();
 
 System.Console.WriteLine("Введите выражение 1: ");
@@ -15,8 +14,3 @@ string b = Console.ReadLine();
 
 bool pr = ab.Sravn(a, b);
 ab.Print(pr);
-
-
-
-
-
