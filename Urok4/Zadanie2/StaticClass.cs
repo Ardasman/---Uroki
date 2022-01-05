@@ -1,3 +1,4 @@
+using System.IO;
 static class StaticClass
 {
     public static int[] Massive(int n) // конструктор массива
@@ -32,5 +33,17 @@ static class StaticClass
             if (a == 0 ^ b == 0) count++;
         }
         return count;
+    }
+    public static int[] FileMass(string filename) // читаем файл и записываем в массив
+    {
+        int[] a = new int[20];
+        StreamReader sr = new StreamReader(filename);
+
+        for (int i = 0; i < 20; i++)
+        {
+            a[i] = int.Parse(sr.ReadLine());
+        }
+        sr.Close();
+        return a;
     }
 }

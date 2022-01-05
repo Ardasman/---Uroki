@@ -9,6 +9,10 @@ int[] Mass = StaticClass.Massive(20);      // создаем массив, ук�
 StaticClass.FillMass(Mass, -10000, 10000); // заполняем массив, указываем диапазон случайных чисел
 string str = StaticClass.Show(Mass);
 Console.WriteLine(str);
-// File.WriteAllText("Massv.txt", str);   // сзаписывае файл в массив
+// File.WriteAllText("Massv.txt", str);   // записывае файл в массив
 int para = StaticClass.ParaThree(Mass); // считаем пары чисел, в которых только одно число делится на 3
 Console.WriteLine($" Количество пар: {para}");
+string file = "/System/Volumes/Data/Диск D/С# Uroki/Urok4/Zadanie2/Massv.txt";
+int[] FileMassnew = StaticClass.FileMass(file); // массив из файла
+string str2 = StaticClass.Show(FileMassnew);
+Console.WriteLine(str2);
